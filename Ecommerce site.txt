@@ -1,0 +1,685 @@
+﻿1. INTRODUCTION
+
+
+Traditional companies and institutions are making use of e-commerce to overcome the boundaries of space and time: it allows them to globalize their operations and offer a more personalized service to the customer. Moreover, many entrepreneurs took advantage of the benefits of e-commerce and created new business models.
+
+
+E-commerce has greatly evolved for forty years of existence and is still evolving continuously,as well as the software offered to support it. When searching for e-commerce solutions, almost all offered systems are focused on building web-shops,despite of the fact that electronic commerce is not just about web shopping any longer
+
+
+1.1 OBJECTIVES
+
+
+The project has two main objectives that are strongly connected. One objective is to analyze, design and develop the first web-shop using the DJANGO platform.This implementation will provide a first open source template, which then can be reused by developers to build their own web-shops.Additionally the source code will serve as a live documentation about how to use the platform.
+
+
+The second objective is to evaluate the capability of DJANGO to compete with the current e-commerce solutions.Better alternatives will be proposed to the platform development team
+
+
+1.2 BACKGROUND
+
+
+Before attempting to evaluate any e-commerce solution it is necessary to exactly define what is
+understood as electronic commerce.It is also important to take a look at history in order to comprehend what elements made e-commerce become what it is today.With that knowledge in hand, we will get a glimpse of the future and decide whether the current e-commerce solutions have a place in it.
+
+
+1.3 WHAT IS E-COMMERCE
+
+
+As a general definition, commerce is the branch of business that includes all activities, which
+directly or indirectly are involved in exchanging goods or services. The trade can be held
+between businesses or individuals, eventually achieving the goal of transferring goods from
+producers to consumers. When information and communication technologies are applied to
+support these activities, we are referring to electronic commerce, also commonly known as E-
+Commerce.
+
+
+Currently there are four major types of e-commerce, classified based on the roles involved in
+the trade: business-to-business (B2B), business-to-consumer (B2C), consumer-to-business (C2B), consumer-to-consumer(C2C).Other lesser types may involve roles such as government, employee or manager in order to define more specialized e-commerce business
+models. Though any of those types can be considered to be subtypes of the four major models.Business-to-business comprehends those commerce transactions held between businesses.
+
+
+ In E-Commerce the volume of B2B sales is around twice the size of B2C, mainly because a typical supply chain has multiple B2B transactions involving suppliers, manufacturers and distributors; while there is only one B2C transaction with the end customer at the very end of the chain. Communication and collaboration interactions between businesses and within companies are also included as part of B2B, in the form of email or a more specialized system to exchange business data, like Electronic Data Interchange (EDI).
+
+
+Business-to-consumer describes all activities involving businesses providing products or
+services to end consumers. B2C is the type of e-commerce with higher number of sales behind B2B, but it is by far the most familiar amongst the population. Companies invest a lot of
+resources in improving the customer experience when interacting with their e-commerce
+interfaces. These can be in the form of electronic retailing or media to communicate with
+customers such as email. Electronic retailing, also known as e-tailing, is the largest part of B2C
+e-commerce, consisting of an online catalog of a retail store or shopping mall, usually called
+web-shop when it is accessed from the web.
+
+
+In consumer-to-business the B2C process is reversed, thus the end customer is the one that
+offers goods or services to the company to complete a business process or gain competitive
+advantage. It is common in specialized blogs and forums, where companies offer money to
+their owners in exchange of advertisement or review of their products.
+
+
+Consumer-to-consumer is a way of e-commerce where a third party facilitates transactions
+between consumers electronically. The most popular example of C2C e-commerce is the online auction, in which customers bid to purchase an item that another consumer has posted for sale, while the third party charges a commission for the exchange.
+
+
+Besides these four major forms of e-commerce, there are other interesting concepts that have
+gained popularity these last years: social and mobile commerce. Social commerce is the
+adoption of social networking features in the context of e-commerce. When it comes to offline
+shopping, it is a natural practice to gather information from oneself’s personal social networks
+before purchasing a product. People usually consult their family and friends for advice, and
+they often speak to the shopkeeper about suitable products. Joining social networks with
+online stores allows customers to have the same experience, with the advantage of reaching a
+largest range of people in a shorter time.
+
+
+On the other hand m-commerce, an abbreviation for mobile commerce, is any kind of e-
+commerce activity that relies on the usage of wireless devices, such as cell phones, personal
+digital assistants (PDA) and smartphones. The range of devices enabled for m-commerce also
+includes general purpose wireless computers, like tablet and laptop computers, but are not usually part of research studies. The reason behind that is the existence of hybrid devices between mobile phones and computers, such as smartphones, that are more specifically designed for m-commerce.
+
+
+1.4 CURRENT ALTERNATIVES
+
+
+Are the current e-commerce solutions ready for bringing quick and affordable integration to
+future scenarios? Almost all shopping cart solutions offered for online shopping are designer-
+oriented built web-shops, with multiple plug-in components, customizable options and 
+exchangeable templates. The merchant requires the e-commerce solution to offer a certain
+feature set in order to use it, otherwise the cost of implementing it may not be worthwhile or
+simply impossible.
+
+
+With the raising of cloud computing, many licensed products have move to a more flexible
+software-as-a-service (SaaS) model, allowing merchants to easily scale their web-shops as
+their businesses grow. Despite of that, merchants are still very limited to what the software is
+offering, and depend on the product to evolve in order to expand their e-commerce
+infrastructure to different environments. Of course, they can also use an independent product
+to support the missing scenario, but with the high cost of having to maintain two or more
+different backend data, having to connect them all together.
+
+
+A very interesting example of these models is Magento, a PHP open-source project that was
+initially launched in 2008 and nowadays enjoys great popularity. The first version offers a
+typical out-of-the-box web-shop, highly customizable and with a wide variety of plug-in and
+templates. The experience of building a web-shop with it was very comfortable, since all the
+changes were done directly with an administration interface, not requiring any technical
+Knowledge.
+
+
+1.5 PLANNING
+
+
+The planning of the project includes the choice of the methodology used and a description of
+the development process. According to the chosen methodology and the analysis of the major
+risks of the project, an initial timeline is proposed. It is important to understand that the current project is part of a bigger project that involves the development of a template that integrates all the functionalities offered in the platform. That means that both projects are connected, hence the teams have to work closely.
+
+
+In this case, it prompted us to use the Prototype Methodology.
+
+
+2. REQUIREMENTS GATHERING AND ANALYSIS
+
+
+In order to start gathering requirements, first it is necessary to identify each group affected by
+this project and understand everyone’s needs.With that information in hand, an initial list of the desired functional and non-functional requirements.can be put into the Product Backlog in the form of user stories. Every sprint these requirements may change, reason why in this section are described only the final requirements that are part of the current Product Backlog of the project.
+
+
+
+
+
+
+2.1 STAKEHOLDER ANALYSIS
+
+
+Potential clients of the project, simplified as “clients” from now on, are companies in need of
+an e-commerce solution, especially those looking for an interface from where to sell goods or
+services to individuals or other companies. They need a system that satisfies their current
+requirements and allows them to easily implement future required functionalities. They hire
+developers, usually working in agencies, to build these tailored applications.
+
+
+End users or customers 7 , equally mentioned as “users” and “customers” in this document, are those actors of the system who would buy in the web-shop in case it went live. Even being an hypothetical situation, this template will be used as a bootstrap project so eventually it will
+become a real web-shop with end users. With no other specific information about these users,
+it can only be assumed that they need an intuitive layout that allows them to shop with ease in
+a few clicks.
+
+
+On the other hand, the development team is in charge of designing and implementing the
+platform that the template is using. Their primary need towards the template is to verify that
+their implementation is adjusting to both developers and clients needs. They might create
+temporal limitations on the template design, but at the same time any suggestion may be
+quickly adopted with no need to change the web-shop requirements.
+
+
+2.2 FUNCTIONAL REQUIREMENTS
+
+
+In order to prove the value of the platform and identify any possible lack of functionality, the
+application should have all the common features of a regular web-shop. Accordingly, it has
+been considered that the initial appropriate set of functionalities for this project include those
+related to browsing and purchasing products, as well as management of a customer account.
+The detailed behavior expected for the web-shop is described below.
+
+
+In the home page all products are displayed sorted by popularity. From here the user can
+select a category; then all products belonging to that category or any descendent will be
+displayed. Whenever a set of products is listed, those products on sale will be highlighted and
+the user will be given the option to sort and filter amongst all products. The sorting can be
+performed by name or price, and the filtering by price and color. Each product thumbnail
+consists of a picture of the product, its name and price, as well as a list of all color variants
+Available. 
+
+
+Clicking on a product thumbnail redirects the user to the product detail page, where besides
+name and price also a description is shown. Here the user is able to select any color and size to visualize the corresponding picture. In any moment the user can add the selected product to
+the shopping cart, afterwards the updated cart contents and total price will be displayed.
+Accessing the cart details also grants the user the possibility to change the number of units of
+an item or remove any particular item from the shopping cart.
+
+
+From here the user can choose to start the checkout process, where he is asked to fill a form
+with shipping information (i.e. shipping address and method) and billing information (i.e.
+billing address and payment data). During the checkout process the order summary (i.e. the
+list of purchased items and pricing details) is displayed all along and kept up to date. Right
+before finishing the checkout process, the user is informed of all introduced shipping and
+billing information as well as the order summary. Once the checkout process is finished,
+another summary is shown along with a successful purchase message.
+
+
+The user can decide to sign up in our systems, in which case he must provide his full name,
+email address and a password. After signing up he is redirected to his user profile, where he
+can update his personal data, change his password, manage his address book or review his
+previous orders in detail. The address book allows the user to store a set of postal addresses
+that can later be selected as shipping or billing address in the checkout process. The user is
+allowed to add new addresses to the address book, as well as update or remove any stored
+Address.
+
+
+While logged in, the user can choose to log out in order to become an anonymous customer. In
+any moment, he can log in again providing his email address and password. In case the user
+forgot his password, he can request to recover it by entering his email address, in which case
+an email is then sent to the address provided containing a web link can then be accessed
+within the next hour, where the user can provide a new password.
+
+
+2.3 NON-FUNCTIONAL REQUIREMENTS
+
+
+In its first stage, the web-shop  is required mainly to analyze the platform capabilities,
+show code examples to developers and attract potential customers. For this reason all non-
+functional requirements are highly focused on those areas. Other areas of great importance as
+well, such as compatibility and performance, are left aside from the current project because of
+the excessive workload that it means.
+
+
+From a developer point of view the quality of the code takes a very important role, so it should
+be well organized, easy to understand and reusable. Therefore it would be considered a good
+practice to use variables and functions with self-explanatory names and keep a well
+commented code. To the extent possible, the generic shop logic should be separated from the
+most specific code in order to facilitate the use of it as a live documentation of the platform.
+
+
+The platform should allow to test any web application built on top of it. In order to prove it is
+allowed, the template should be completed with automated functional tests, being careful of
+keeping these tests independent from the backend data in use. That way a change in the data,
+very likely to happen in a template web-shop, will not affect the results. The same principle
+should be applied to the code in general, to keep the template from being non-functional when
+the data used is different.
+
+
+Although major part of the required security is located on the e-commerce and payment
+platforms, there are some risks server side that must be top priority when it comes to online
+shopping. For example some data needs a careful treatment, like user related data such as
+addresses, passwords and payment information. Particular attention must be paid with the
+checkout process in order to avoid fraud.
+When online payment is involved in an application, payment data needs to be processed and
+stored somewhere. 
+
+
+Being a sample web-shop it is most appropriate in this case to leave this role to the payment
+platform, thus sending any payment data to the template’s web server must be strictly avoided.
+
+
+The template should be intuitive and use latest design tendencies, especially those allowing a
+faster navigation experience. The user should be able to use all functionalities of the web-shop
+in a smooth way, trying to minimize the number of times the page is fully reloaded. This will
+also speed up the communication with the web server, thereby favoring a more efficient
+interaction with the web-shop.
+
+
+3. SPECIFICATION
+
+
+Agile methodologies suggest to elaborate documentation only as needed, without having any
+required artifacts for each stage as traditional methodologies usually do. The reason why heavy documentation is not recommended is because requirements are expected to change
+constantly during the development process, forcing to update every diagram and text each
+time a change is applied, with the consequent loss of time that could have been otherwise used to develop the product.
+
+
+For this reason, only some simplified diagrams were drawn during the specification and design
+stages, the necessary to understand the system and share ideas with the SPHERE.IO team.
+Therefore most of the artifacts presented in both this section and section Design 4, were made
+after the product was already built, intended to assist the reader in understanding better the
+System.
+
+
+3.1 USE-CASE MODEL
+  
+
+
+
+
+
+The use cases for displaying products are shown below in Figure 3.3. The customer can either
+list a set of products or display a particular product. Further additional functionalities can be
+applied to the product listing, individually or combined together, in order to alter the list itself
+(i.e. filtering) or the way the products are listed (i.e. sorting and pagination).
+
+
+  
+
+
+
+
+
+This Figure shows the use cases related to purchasing products. They can be clearly divided into two different topics: on the one hand all those use cases for managing the shopping cart (i.e.adding, updating and removing items), on the other hand those related to placing and listing orders. When placing an order the customer may be requested to pay online, in which case the payment platform will provide the necessary means. Anonymous as much as registered customers can place orders, but only customers that have been identified are able to list their own orders, otherwise they are requested to identify themselves.
+
+
+  
+
+Finally, for the use cases related to account management , a registered customer
+can manage his address book (i.e. add, update or remove postal addresses) or update his
+account (i.e. change his personal data or password). He can as well decide to log out from the
+system and become an anonymous customer. As an anonymous customer, he can sign up a
+new account or log in with an existing one. In case he cannot remember his credentials, he will
+be given the option to recover his password.
+
+
+  
+
+
+
+The previously explained use cases are mostly useful to define the scope of the project and
+understand its functionalities. For example, these use cases can be helpful to estimate tasks
+and elaborate the development plan, as well as a guide to determine the necessary functional
+tests for the system. But these use cases are too granular for other purposes, such as defining
+acceptance tests or describing the sequence of user interactions with the system. These tasks
+require a more abstract level of use cases, focused on user goals instead of functionalities,
+sometimes called top-level use cases.
+
+
+A top-level use case describes a single elementary business process that allows a particular
+user to fulfill a goal. In this system there are mainly three goals that a customer may want to
+achieve when he uses the web-shop, as shown in Figure 3.6. The first one consist of browsing
+the catalog and selecting those products of interest. At some moment, the user can decide to
+review the selected items and eventually buy them, which is the second goal. Finally, the third
+goal involves checking the payment or shipping status of the order, or any additional related
+Information.
+
+
+  
+
+
+
+All low-level use cases defined earlier are actually providing the functionalities to fulfill these
+three goals. Both low-level and top-level use cases are being used indistinctly throughout this
+document to elaborate other diagrams and descriptions, its use responding mostly to the level
+of abstraction that fits best the explanation. In any case, the term “top-level” is expressly used
+when referring to this type of use case.
+
+
+3.2 SYSTEM BEHAVIOR MODEL
+
+
+Almost all the low-level use cases of this project consist of only one interaction between the
+user and the system. This may be useful for projects that require very detailed information
+about the system to be developed, possibly because its behavior is very specific and unique.
+But this is not the case of this project whatsoever, the use cases defined here are precisely very common amongst web-shops, so any operation offered by this system is considered to be self-explanatory.
+
+
+As mentioned before, the top-level use cases are here more appropriate to describe the user
+communication with the system. This is because they provide information not only about the
+system behavior, but also about the sequence of interactions that the customer usually
+performs in order to achieve a goal.
+  
+
+The checkout top-level use case is shown in the  Figure above. Once the customer has some line items in his shopping cart, the next step is to navigate to the cart page. Here the user can remove or modify his line items until he is ready to start the checkout process. There, after entering all shipping and billing information, the customer will confirm the purchase and the system will request the payment platform to process the payment, displaying the order details in response to the customer.
+
+
+  
+
+
+
+The last sequence diagram displays the interactions that the customer has to perform in order
+to check the state of an order in the figure above. This scenario requires the customer to previously sign up to the system and purchase some items as a registered customer. Then at any moment the user can go to the login page and enter the login information to access his customer profile. There he can select to list all his orders and select the one he wants to view in detail.
+
+
+  
+
+3.3 CONCEPTUAL MODEL
+
+
+The conceptual model of this project revolves around the cart concept, while all other system
+elements are there to provide the required information to the cart, as seen in the diagram. Products are related to carts as a list of product variants, forming line items. Variant is a concept to define the part of the product that contains the particular characteristics of it, such as color or size, even having sometimes a different price. Therefore every product has at least one variant, each one with different price or attributes.
+
+
+Similarly, a cart can be associated with one of the shipping methods available in the system,
+resulting in a shipping item, necessary to manage taxes. Both products and shipping methods
+have a particular tax category, that can be variable for products and fixed in the case of
+shipping. When one of these elements are added to the cart, a tax rate is assigned to the item
+according to this tax category and the shipping address of the cart.
+
+
+As mentioned above carts can have a shipping address, but can have as well a billing address.
+A cart can belong to a registered customer, otherwise it is considered to have an anonymous
+customer. Once the checkout is finished a cart becomes an order, with information about the
+current payment, shipping and order status. If the customer was not anonymous, this order
+will be associated with that customer, along with any of his previous orders. Every customer
+can also have a list of addresses comprising the address book.
+
+
+  
+
+
+
+
+
+Products, addresses and shipping methods can change or disappear over time, but the orders
+associated with them must stay in the system for an indefinite period of time, having exactly
+the original information. To solve this issue, cart is not related to the original instances, but to
+instances that were created exclusively for this particular cart as a snapshot of those original
+instances. While the current cart may optionally have associated information, this information
+is mandatory in an order instance.
+
+
+For simplicity, the conceptual model only accepts product and shipping prices that do not
+include taxes. Allowing taxes in prices can be achieved by simply adding a boolean attribute
+indicating whether the price in question has taxes included or not. So assuming that taxes are
+not included, the net total price in the cart must be the sum of all the line item prices (i.e. the
+quantity in each line item multiplied by the corresponding variant price) associated with it,
+plus the price of the shipping method selected. In order to calculate the gross total price, taxes
+must be added up to this resulting net price. Taxes are calculated multiplying the price of each
+shipping or line item by its corresponding tax rate.
+
+
+Lastly when the shipping address is set in the cart, all tax rates from shipping and line items
+are calculated. Only those products that include a tax category corresponding to the zone (e.g.
+state, country) of the shipping address can be part of the cart. Missing the tax category means
+that the price cannot be calculated, thus the product is not available in that zone.
+
+
+3.4 STATE DIAGRAMS
+
+
+There are two interesting state diagrams of this system, both related to the cart element. The
+first diagram below  describes how a cart instance changes until it becomes a complete
+order. As the diagram below shows, the current cart is the initial state, which allows to change
+its contents in multiple ways, such as adding or removing line items or selecting a shipping
+address. Once the checkout is finished the cart becomes an order, being this an irreversible
+change. From now on the order can only change from an open to a complete state, and vice
+Versa.
+
+
+  
+
+
+
+The second diagram below describes the whole process of managing the shopping cart
+and eventually purchasing these products in the checkout process. This diagram will become
+especially useful when designing the checkout interface, as it clearly displays the requirements
+of each step of the checkout process.
+  
+
+
+
+At the beginning of the process a new cart is created. Once the cart contains an item it can be
+further updated, then at any moment the user can start or exit the checkout process. Initially
+the checkout process requires a shipping address to display the shipping methods, then it 
+requires a shipping method to display billing options. Of course this sequence can be skipped
+if the cart has already these requirements.
+
+
+When the user provides the billing information and finalizes the checkout, the system charges
+the customer. The order is then created after the payment platform confirms that the payment
+was successful. The moment the previous cart becomes an order, a new cart is created for the
+customer in order to start the process once again.
+
+
+4. DESIGN
+
+
+The software design describes the final details of a system before it is implemented. During the
+design process decisions are taken in order to meet the gathered requirements, decisions that
+are then applied to the system defined.
+
+
+The selection of a technology is a decisive process aimed to obtain the optimal results of a
+project. An unwise decision can sometimes seriously affect the total resources needed or the
+successful fulfillment of the proposed objectives. It is also important to design correctly the
+structure of the system, for example identifying and applying the software patterns that can
+solve existing problems in this particular project.
+
+
+4.1 SYSTEM ARCHITECTURE
+
+
+The designed system follows a client-server architecture with three tiers: the client, the web
+application server and the data server tier.
+The application tier needs an enterprise hosting solution, suitable for a company web-shop. In order to take advantage of the scalability of the data tier, a good matching web hosting solution would be a cloud service with easy and fast scalability, letting the shop grow as the number of customers grow, without any bottleneck.
+
+
+
+
+  
+
+
+
+                                    
+
+
+The figure above illustrates the physical architecture of the system. As appears in the diagram, any request to a Heroku deployed web application is first processed by one of the many platform’s reverse proxies. The reverse proxy forwards the request to a HTTP cache layer, which returns the page if it is cached, otherwise forwards the request to the corresponding web application.
+
+
+The communication between the web application and the DJANGO backend is always held
+with HTTPS as a requirement of the e-commerce platform. Instead, the protocol of the
+requests between the client and the web server are decision of the developer. For this project
+the most reasonable option would be to use HTTPS whenever customer data is being
+transferred. This is typically the case of the checkout process, as well as any time the customer
+is logged in.
+
+
+4.2 SYSTEM LOGICAL ARCHITECTURE
+
+
+The logical architecture of the system is designed after the MVC (Model-View-Controller)
+architectural pattern, which is widely used in web applications design. Its use in this project is
+required, since MVC is the architecture pattern followed by Play Framework, the web
+framework on which DJANGO has been developed.
+As the name suggests, the system logic is divided into three components: Model, View and
+Controller. As a rough definition, the Model manages business logic and domain data, the
+View is responsible of displaying the information, and the Controller is in charge of changing
+Model and View accordingly to the user input.
+
+
+The specific MVC design of the current system is shown in the Figure below. One of the
+particularities of this design is that DJANGO is the main component of the Model,
+since it controls all the domain data of the application, as well as most of the business logic.
+Only some business rules are added to the Model in order to validate form input coming from
+the user, as well as some external functionalities such as email sending and online payment.
+
+
+  
+
+
+
+When the request reaches the web application server, a routing system analyzes the HTTP
+request and invokes a particular action of the corresponding controller. Then the controller
+interprets all required input parameters coming from the user and requests the appropriate
+changes to the model. In the model,CRUD operations are implemented.
+
+
+Once the model finishes processing the request, the controller selects the appropriate template
+and sends all information related to the current request to the view. With this information and
+some other obtained directly from the model, the view generates a HTML document that is
+sent back to the client via a HTTP response.
+
+
+  
+
+
+
+
+
+
+
+Diagram of the logical architecture of the system within a context.
+
+
+In order to facilitate understanding of the logical architecture of the system, its design has
+been divided into two different diagrams: the one corresponding to the scenario between
+contexts and the one displaying the scenario within a context.
+
+
+Every time a new context is loaded or the user interacts with the web page in some way, an
+event is fired by HTML DOM. The controller on the client side can handle these events, in
+which case it gathers the required information and requests the client-side model to validate
+this information in order to avoid unnecessary calls to the server. If the validation was successful, the controller sends the corresponding HTTP request to the server, which is
+analyzed by the routing system and handed over to a controller action the same way as before.
+
+
+As well as before the controller requests the appropriate changes to the model, but this time
+when the model finishes, the controller generates JSON data using the information related to
+the current request coming from the model. This JSON data is sent back to the controller
+located on the client, which in turn selects a template and sends this data to the view. With
+that, the view generates a HTML fragment that uses to replace the corresponding component
+on the web page.
+
+
+  
+
+Screens and navigational paths of the browse catalog top-level use case.
+
+
+  
+
+
+
+Screens and navigational paths of the checkout top-level use case.  
+Screens and navigational paths of the check order top-level use case.
+
+
+INTERNAL DESIGN
+
+
+After representing the external design of the system, every diagram of the UX Model needs to
+be adapted to the chosen technologies. An internal class and sequence diagram are resulting
+from this process, showing the communication between each component. These diagrams are
+Represented using UML(unified modelling language).
+
+
+There are also new association stereotypes to represent the different ways of communication
+between elements. These can be, amongst others, a common link with parameters (link), a
+form data submission (submit), a forwarding of the request to another element (forward), a
+generation of HTML output (build) or an import of a JavaScript file (script).
+
+
+Internal design diagrams can become quite complex when trying to represent all files that
+participate in a use case, particularly when applying some design patterns. For this reason, in
+this section only those diagrams that illustrate some special behavior or structure are
+displayed, simplifying any characteristic that is later described in the following sections, such
+as design patterns that apply to all use cases.
+
+
+The internal class diagram in the figure represents the whole browse catalog top-level use
+case. It is worth noticing that usually a client page links first to a server page. The first server page symbolizes a file in the Controller component, while the second corresponds to a Scala template from the View, which builds the client page.
+
+
+An exception to this rule appears within contexts, when the client page asynchronously makes
+a request to the server. The response is simple data, so no HTML output is built, and it is the
+client page itself which updates its content with the information sent via forward parameters.
+The methods that allow to update the information from the client page are always coming
+from the JavaScript files, but generally are represented as methods from the client page. Only
+exception appears when the same method is shared between two pages, in which case it is left in the script for simplicity 
+ 
+
+
+  
+
+Internal design class diagram of the browse catalog top-level use case.
+
+
+  
+
+Internal design class diagram of the checkout top-level use case, detail of the cart update.
+
+
+6. SYSTEM TESTS
+
+
+This section describes all kind of tests that have been run against the system, both periodical
+and one-time tests.
+
+
+6.1 FUNCTIONAL TESTS
+
+
+As explained,, this project follows a continuous deployment process which requires functional tests to be implemented along with the feature, to ensure the functionality is working correctly every time a change is merged with the project.
+
+
+A major difficulty of developing functional tests in this project is that they should work with
+any set of commerce data, so that when developers switch from the test web-shop data to their own, the tests are still functional.
+
+
+6.2 UNIT TESTS
+
+
+Unit tests are focused on checking the correct behavior of individual components when they
+are isolated from the rest of the system.In this case, there was the use of pytest as the unit-testing framework.
+
+
+6.3 INTEGRATION TESTS
+
+
+Integration tests are in charge of checking that the previously tested components are correctly
+working together.
+
+
+Unlike unit testing, here the tests only need to verify that the response is the expected when an
+action is requested. The content is not checked, as this should be already verified by the unit
+Tests.
+
+
+6.4 ACCEPTANCE TESTS
+
+
+Acceptance tests are ensuring that the main requirements agreed for the project are met in the
+current version. So they need to prove that it is possible for a user to achieve at least the main
+goals for which he is using the web application.
+
+
+These type of tests need to be supervised by the client of the product, usually non-technical
+people. This makes it a requirement to be easy to understand them by using a plain language
+to define the rules.
+
+
+6.5 PERFORMANCE TESTING
+
+
+Constantly during the project development, the tool Chrome DevTools was used to check the
+performance of the web-shop, paying special attention to repeated calls or some unexpected
+behavior resulting from a flaw in the software. This way it was possible to detect a bug in the
+endless scroll for the product list, which executed repeated calls to the web application server
+even when there were no more product available. Also some methods with high response times could be fine-tuned with this tool.
+
+
+7 CONCLUSION
+
+
+E-commerce needed the web to be born in order to start being a profitable business. Nobody
+knows for sure what other technologies may appear to change the e-commerce world we know today, but running businesses should get ready for them beforehand. SaaS product model is an easy-to-use but powerful e-commerce solution, although it is really slow reacting to changes and it needs to be designed for a particular business model and technologies.
+
+
+The new e-commerce PaaS model not only allows to give a fast answer to new e-commerce
+scenarios, but also gives flexibility to developers to choose their programming language and
+framework of preference. Furthermore, it can still emulate mostly all advantages of software
+solutions by distributing open source templates, like the one developed in the current project,
+that can be easily deployed to a cloud platform.
