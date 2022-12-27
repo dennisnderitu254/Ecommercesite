@@ -10,7 +10,7 @@ Pillow==4.2.1
 pip==9.0.1
 pytz==2017.2
 requests==2.18.4
-setuptools==36.3.0
+setuptools==65.5.1
 smmap2==2.0.3
 stripe==1.67.0
 urllib3==1.22
