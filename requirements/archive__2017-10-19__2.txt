@@ -13,7 +13,7 @@ pip==9.0.1
 psycopg2==2.7.3.1
 pytz==2017.2
 requests==2.18.4
-setuptools==36.6.0
+setuptools==65.5.1
 smmap2==2.0.3
 stripe==1.68.0
 urllib3==1.22
